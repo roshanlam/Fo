@@ -1,0 +1,19 @@
+{{template "header" .}}
+<div class="container">
+    <h1>Welcome to Fo!</h1>
+
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="loginUsername">Username</label>
+            <input type="text" class="form-control" id="loginUsername"
+                   aria-describedby="loginUsernameHelp" placeholder="Enter username" required>
+            <small id="loginUsernameHelp" class="form-text text-muted">
+                Either enter your own username or an username you would like to register.
+                You will automatically be asked to register your account.
+            </small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login or Register</button>
+    </form>
+</div>
+{{template "footer" .}}
